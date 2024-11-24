@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructorLoginActivity"
+
+    android:background="@color/white">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/container">
+
+            <ImageView
+                android:id="@+id/logo_img"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/back_img"
+                android:src="@drawable/arrow_black"/>
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+
+            <TextView
+                android:id="@+id/tv_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_img"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="-50dp"
+                android:text="Sign In"
+                android:textColor="@color/blue"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_enter_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sign"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Please Enter Your Details"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+            <EditText
+                android:id="@+id/login_email_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_enter_details"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/edit_text_states"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/login_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/login_email_et"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/edit_text_states"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/forgotBtn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_password_et"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:text="Forgot Password?"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+
+            <Button
+                android:id="@+id/login_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/forgotBtn"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/button_blue_bg"
+                android:elevation="2dp"
+                android:outlineAmbientShadowColor="@color/blue"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/tv_or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:text="OR"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/create_acc_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/tv_or"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_white_bg"
+                android:elevation="2dp"
+                android:outlineAmbientShadowColor="@color/blue"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="17dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/booking_history_card"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="15dp">
+
+            <TextView
+                android:id="@+id/booking_id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Booking ID"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/instructor_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/booking_id_tv"
+                android:layout_marginTop="10dp"
+                android:text="Instructor name"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/category_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instructor_name_tv"
+                android:layout_marginTop="10dp"
+                android:text="Category"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Date"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:id="@+id/booking_date_tv"
+                android:layout_below="@+id/category_tv"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Time"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/booking_time_tv"
+                android:layout_below="@+id/booking_date_tv"/>
+
+
+            <TextView
+                android:id="@+id/status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/booking_time_tv"
+                android:layout_marginTop="10dp"
+                android:text="Status"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

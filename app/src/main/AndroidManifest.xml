@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.betterme">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BetterMe">
+        <activity
+            android:name=".InstructorLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BookingHistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InstructorEditProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InstructorProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BookingDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BookingListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InstructorSignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InstructorDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InstructorsListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EducationCategoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SportsCategoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StudentOrInstructorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.betterme.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructorDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/back_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/arrow_black" />
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/instructor_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Instructor Details"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/instructor_image"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:layout_marginTop="50dp"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instructor_image"
+                android:layout_marginStart="20dp"
+                android:text="Information"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/instructor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_tv"
+                android:layout_marginStart="20dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+
+
+            <TextView
+                android:id="@+id/experties_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instructor_name"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Experties"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/instructor_experties"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/experties_tv"
+                android:layout_marginStart="20dp"
+                android:text="Maths"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/contact_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/instructor_experties"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Contacts"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/contact_email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_tv"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/email_2"
+                android:text="farhanfazal07@gmai.com"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/contact_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_email_tv"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/phone"
+                android:text="00973-39835485"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/certificate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_number_tv"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Certificate"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/certificate_1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/certificate_tv"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Currently Teaching/working"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+
+
+
+            <EditText
+                android:id="@+id/et_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/certificate_1_tv"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_text_states"
+                android:hint="Select Booking Date"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+
+
+            <EditText
+                android:id="@+id/et_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/et_date"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_text_states"
+                android:hint="Select Booking Time"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="15dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+
+            <Button
+                android:id="@+id/bookhim_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/et_time"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_blue_bg"
+                android:elevation="2dp"
+                android:outlineAmbientShadowColor="@color/blue"
+                android:text="Book Him"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

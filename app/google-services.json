@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "920656908778",
+    "firebase_url": "https://better-me-a405b-default-rtdb.firebaseio.com",
+    "project_id": "better-me-a405b",
+    "storage_bucket": "better-me-a405b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920656908778:android:796d0d85e06a7cb3796293",
+        "android_client_info": {
+          "package_name": "com.example.betterme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920656908778-7u02o61568ld9u535gfj0scq7rs68db0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2TusHPVCkvlUw5HOFrBmzUA4P1uLJpFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920656908778-7u02o61568ld9u535gfj0scq7rs68db0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920656908778:android:52e8023a3eb111f6796293",
+        "android_client_info": {
+          "package_name": "com.houseofresources.cyberautoservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920656908778-7u02o61568ld9u535gfj0scq7rs68db0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2TusHPVCkvlUw5HOFrBmzUA4P1uLJpFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920656908778-7u02o61568ld9u535gfj0scq7rs68db0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

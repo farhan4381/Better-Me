@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginEnd="170dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/profile_card"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_profile"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/profile_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/profile_card"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_settings"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/settings_btn"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/sports_layout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/logo_img"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sports_card"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="75dp">
+
+            <ImageView
+                android:id="@+id/sports_image"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:src="@drawable/sports">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sports_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sports_layout"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/button_blue_bg"
+        android:elevation="2dp"
+        android:text="Sport"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+    />
+
+
+    <RelativeLayout
+        android:id="@+id/education_layout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/logo_img"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/education_card"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="75dp">
+
+            <ImageView
+                android:id="@+id/sports_education"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/education">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/education_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/education_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/button_blue_bg"
+        android:elevation="2dp"
+        android:text="Education"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+</RelativeLayout>

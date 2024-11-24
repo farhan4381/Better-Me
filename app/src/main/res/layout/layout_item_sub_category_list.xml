@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:layout_marginTop="10dp">
+
+    <Button
+        android:id="@+id/category_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_blue_bg"
+        android:elevation="2dp"
+        android:clickable="false"
+        android:outlineAmbientShadowColor="@color/blue"
+        android:text="Gym Coach"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+
+</RelativeLayout>

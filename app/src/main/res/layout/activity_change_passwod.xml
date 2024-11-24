@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangePasswordActivity">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/back_img"
+        android:src="@drawable/arrow_black"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_changepassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Change Password"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/old_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_changepassword"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edit_text_states"
+        android:hint="Enter Old Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/new_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/old_password_et"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edit_text_states"
+        android:hint="Enter New Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="15dp" />
+
+
+    <EditText
+        android:id="@+id/confirm_new_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/new_password_et"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edit_text_states"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/confirm_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/confirm_new_password_et"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_blue_bg"
+        android:elevation="2dp"
+        android:outlineAmbientShadowColor="@color/blue"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SportsCategoryActivity">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/back_img"
+        android:src="@drawable/arrow_black"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onBackClick" />
+
+    <TextView
+        android:id="@+id/sports_category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Sports"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="10dp"
+        android:id="@+id/sports_cat_rv"/>
+
+</RelativeLayout>
